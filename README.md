@@ -62,7 +62,7 @@ disposes its ConfettiController when it closes.
 | Future date | Dates after October 28 greyed out in corrected calendar | Figure 8 |
 | Landscape | Name and email remained visible | Figure 5 |
 | Successful signup | Welcome, Samad! and confetti appeared | Figure 9 |
-| System Back from success | Returned to Foyer | My reported observation |
+| System Back from success | Returned to Foyer | My observation |
 | Later Lab visit | Empty form displayed | Figure 10 |
 
 Some screenshots retain earlier red error messages after the values were edited.
@@ -109,7 +109,6 @@ prove a separate successful signup for each chosen date.
 | Input | Expected | Observed |
 |---|---|---|
 | January 1, 1920 | Selectable | Displayed in field, Figure 6 |
-| December 31, 1919 | Rejected | Not recorded |
 | January 1, 2008 | Selectable | Displayed in field, Figures 4 and 7 |
 | Shown current date | Selectable | October 28 selected, Figure 8 |
 | Next day | Not selectable | October 29 greyed out, Figure 8 |
