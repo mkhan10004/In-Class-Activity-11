@@ -1,0 +1,40 @@
+ACTIVITY 11 — UNDERGRADUATE — CAMPUS CREW: AFTER DARK
+
+This extends your Activity 10 source; it is not a new counter application.
+
+OPTION A: USE YOUR EXISTING ACTIVITY 10 ANDROID PROJECT
+1. Make a backup or separate Git branch.
+2. Replace lib/ with this package's lib/ folder.
+3. Replace pubspec.yaml and test/ with this package's versions.
+4. Copy docs/ and this README.md.
+5. Keep your existing android/ folder and SDK configuration.
+6. Run flutter pub get.
+7. Verify android/app/src/main/AndroidManifest.xml has INTERNET permission
+   for the preserved Activity 10 service (bootstrap can add it).
+
+OPTION B: RUN THIS SOURCE PACKAGE ON ITS OWN
+Open a terminal inside activity11_signup_app and run:
+  python tool/bootstrap.py
+Use py instead of python if needed on Windows.
+The helper generates SDK-matched Android files and gets dependencies.
+
+RUN (mock coach retained from Activity 10):
+  flutter run --dart-define=USE_MOCK=true
+
+CHECK:
+  dart format lib test
+  flutter analyze
+  flutter test --dart-define=USE_MOCK=true
+
+BUILD:
+  flutter build apk --release --dart-define=USE_MOCK=true
+  APK: build/app/outputs/flutter-apk/app-release.apk
+If release is blocked, document the reason and use:
+  flutter build apk --debug --dart-define=USE_MOCK=true
+
+If using the instructor service, replace USE_MOCK=true with
+AI_PROXY_URL=YOUR_INSTRUCTOR_HTTPS_ENDPOINT in run/build commands.
+
+Ghost Hunt experiment commands and steps: docs/GHOST_HUNT.md.
+No APK is bundled. Flutter tests have not been run in this environment.
+The Word document's observed-results fields need your Activity 11 evidence.

@@ -1,0 +1,17 @@
+name: signup_app
+description: Activity 11 extends the Activity 10 form into a haunted campus mansion.
+publish_to: 'none'
+version: 2.0.0+2
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  animated_text_kit: ^4.3.0
+  confetti: ^0.8.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
