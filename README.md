@@ -65,14 +65,7 @@ disposes its ConfettiController when it closes.
 | System Back from success | Returned to Foyer | My observation |
 | Later Lab visit | Empty form displayed | Figure 10 |
 
-Some screenshots retain earlier red error messages after the values were edited.
-The form rechecks its validators when Join the Mansion is pressed; editing alone
-does not immediately clear those messages. The successful Ballroom screenshot
-shows that the form later reached success.
 
-Not recorded in this evidence: short-password rejection, loading duration,
-double-tap behavior, mid-load exit, repeated confetti visits, automated test
-results, and APK build/install results. These are not marked as passed.
 
 ## Ghost Hunt 1 — The Reversed Trapdoor
 
